@@ -15,16 +15,6 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
-      role: {
-        type: INTEGER(1),
-        allowNull: false,
-        comment: '用户类型 0:用户;1:管理员',
-      },
-      dept: {
-        type: INTEGER(1),
-        allowNull: false,
-        comment: '用户部门',
-      },
       username: {
         type: STRING(50),
         allowNull: false,
@@ -32,7 +22,7 @@ module.exports = {
       },
       realname: {
         type: STRING(50),
-        allowNull: false,
+        allowNull: true,
         comment: '姓名',
       },
       password: {
@@ -42,23 +32,18 @@ module.exports = {
       },
       email: {
         type: STRING(50),
-        allowNull: false,
+        allowNull: true,
         comment: '邮箱',
       },
       mobile: {
         type: STRING(50),
-        allowNull: false,
+        allowNull: true,
         comment: '电话',
       },
       login_ip_now: {
         type: INTEGER(50),
-        allowNull: false,
+        allowNull: true,
         comment: '当前登录ip',
-      },
-      login_ip_now: {
-        type: INTEGER(50),
-        allowNull: false,
-        comment: '上次登录ip',
       },
       remark: {
         type: STRING(250),
@@ -72,12 +57,12 @@ module.exports = {
       },
       question: {
         type: STRING(250),
-        allowNull: false,
+        allowNull: true,
         comment: '找回密码问题',
       },
       answer: {
         type: STRING(250),
-        allowNull: false,
+        allowNull: true,
         comment: '找回密码答案',
       },
       create_time: {

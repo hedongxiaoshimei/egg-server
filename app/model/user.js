@@ -18,21 +18,13 @@ module.exports = app => {
       autoIncrement: true,
       allowNull: false,
     },
-    role: {
-      type: INTEGER(1),
-      allowNull: false,
-    },
-    dept: {
-      type: INTEGER(1),
-      allowNull: false,
-    },
     username: {
       type: STRING(50),
       allowNull: false,
     },
     realname: {
       type: STRING(50),
-      allowNull: false,
+      allowNull: true,
     },
     password: {
       type: STRING(50),
@@ -40,19 +32,15 @@ module.exports = app => {
     },
     email: {
       type: STRING(50),
-      allowNull: false,
+      allowNull: true,
     },
     mobile: {
       type: STRING(50),
-      allowNull: false,
+      allowNull: true,
     },
     login_ip_now: {
       type: INTEGER(50),
-      allowNull: false,
-    },
-    login_ip_now: {
-      type: INTEGER(50),
-      allowNull: false,
+      allowNull: true,
     },
     remark: {
       type: STRING(250),
@@ -64,11 +52,11 @@ module.exports = app => {
     },
     question: {
       type: STRING(250),
-      allowNull: false,
+      allowNull: true,
     },
     answer: {
       type: STRING(250),
-      allowNull: false,
+      allowNull: true,
     },
     create_time: {
       type: DATE,
